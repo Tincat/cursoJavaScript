@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="bla" method="post" id="form">
+		<fieldset><legend>Primera fecha (la mas lejana)</legend>
+			<div>
+				<label for="dia1">Dia:</label>
+				<input type="text" id="dia1" name="dia1"/>
+			</div>
+			<div>
+				<label for="mes1">Mes: (en numero)</label>
+				<input type="text" id="mes1" name="mes1"/>
+			</div>
+			<div>
+				<label for="ano1">Año:</label>
+				<input type="text" id="ano1" name="ano1"/>
+			</div>
+		</fieldset>
+		<fieldset><legend>Segunda fecha (la mas actual)</legend>
+			<div>
+				<label for="dia2">Dia:</label>
+				<input type="text" id="dia2" name="dia2"/>
+			</div>
+			<div>
+				<label for="mes2">Mes: (en numero)</label>
+				<input type="text" id="mes2" name="mes2"/>
+			</div>
+			<div>
+				<label for="ano2">Año:</label>
+				<input type="text" id="ano2" name="ano2"/>
+			</div>
+		</fieldset>
+	</form>
+	<input type="button" id="calcular" value="Calcular" />
+	<div id="totalDias">
+			
+	</div>
+	<script src="js/Examen.js"></script>
+</body>
+</html>

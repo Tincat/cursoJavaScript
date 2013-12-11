@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<fieldset><legend>Empleado</legend>
+			<form action="bla" method="post" id='form'>
+				<div>
+					<label for="nombre">Nombre</label>
+					<input type="text" id="nombre" name="nombre"/>
+				</div>
+				<div>
+					<label for="domicilio">Domicilio</label>
+					<input type="text" id="domicilio" name="domicilio"/>
+				</div>
+				<div>
+					<label for="telefono">Telefono</label>
+					<input type="tel" id="telefono" name="telefono"/>
+				</div>
+				<div>
+					<label for="puesto">Puesto</label>
+					<select name="puesto" id="puesto">
+						<option value="prog">Programador</option>
+						<option value="anal">Analista</option>
+						<option value="jefe">Jefe de desarrollo</option>
+						<option value="admin">Administrador</option>
+					</select>
+				</div>
+				<div>
+					<input type="submit" value="Send"/>
+				</div>
+			</form>
+			<div id="resumen">
+			</div>
+			<script src="js/empleado.js"></script>
+		</fieldset>
+</body>
+</html>
