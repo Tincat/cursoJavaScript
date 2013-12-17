@@ -1,5 +1,18 @@
-var apuestas=[];
-//Math.floor(Math.random()*numero)
+var apuestas={
+	valores:[],
+	insertar:function(x){
+		valores.push(x);
+	},
+	toString: function(){
+		apuestasStr="Apuesta";
+		for (val in this.valores){
+			apuestasStr+=" " + val;
+		}
+		return apuestasStr;
+	}
+};
+
+
 function $1(id){
 	if(typeof  id != "undefined"){
 		var ref=document.getElementById(id);
@@ -15,7 +28,13 @@ function mostrarPorConsola(obj){
 	
 }
 function generarApuestas(){
-	
+	var rango=parseInt($1('rango').value);
+	var numeroApuestas=parseInt($1('nApuestas').value);
+	for (cont=0;cont<numeroApuestas;cont++){
+		apuestas.insertar(Math.floor(Math.random()*rango));
+	}
+	var resultado=$1('rasultado');
+	resultado.innerHTML(apuestastoString);
 }
 
 function init(){
